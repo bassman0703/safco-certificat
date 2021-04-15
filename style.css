@@ -1,0 +1,39 @@
+body {
+    background: rgb(204, 204, 204);
+}
+.bg-image{
+    background-image: url(./img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: 640px;
+    background-position-y: 60px;
+    background-position-x: 90%;
+}
+/* .p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+} */
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+@media print {
+    body, page {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
+.p-text{
+    font-size: 18px;
+    color: #7B7B7B;
+}

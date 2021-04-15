@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(204, 204, 204);
+        }
+
+        .bg-image {
+            background-image: url(./img/img-1.png);
+            background-repeat: no-repeat;
+            background-size: 640px;
+            background-position-y: 60px;
+            background-position-x: 90%;
+        }
+
+        /* .p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+} */
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        }
+
+        page[size="A4"][layout="landscape"] {
+            width: 29.7cm;
+            height: 21cm;
+        }
+
+        @media print {
+
+            body,
+            page {
+                margin: 0;
+                box-shadow: 0;
+            }
+        }
+
+        .p-text {
+            font-size: 18px;
+            color: #7B7B7B;
+        }
+
+        .image-position {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-right: 90px;
+        }
+        .footer-position{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <page size="A4" layout="landscape" class="bg-image">
+        <div>
+            <div class="image-position">
+                <div>
+                    <img style="width: 300px ; padding:60px 65px 10px;" src="img/logo.png" alt="safco-logo">
+                    <div>
+                        <img style="width: 380px; padding-left: 30px;" src="img/logo-2.png" alt="logo-line">
+                    </div>
+                </div>
+                <div>
+                    <img style="width: 150px" src="img/img-2.png" alt="">
+                </div>
+            </div>
+            <div style="padding: 10px 60px;">
+                <div class="p-text">This is to certify that</div>
+                <div class="p-text">სერტიფიკატი ადასტურებს, რომ</div>
+                <p style="padding-left: 20px;font-size: 20px; font-weight: bold;">დავით რუხაძე</p>
+                <p style="padding-left: 20px;font-size: 20px; font-weight: bold;">David Rukhadze</p>
+                <p style="padding-left: 20px;font-size: 20px; font-weight: bold;">პ/ნ:123456789112 </p>
+                <div class="p-text"> has completed the following course</div>
+                <div class="p-text">წარმატებით გაიარა შემდეგი კურსი</div>
+            </div>
+            <br>
+            <div style="padding: 10px 60px;">
+                <div style="font-size: 24px;">WORKING AT HEIGHT</div>
+                <div style="font-size: 24px;">სიმაღლეზე მუშაობა და დამცავი მექანიზმები</div>
+            </div>
+            <div style="padding: 10px 60px;">გაცემის თარიღი: 16/02/2021</div>
+        </div>
+        <div style="padding: 10px 100px" class="footer-position">
+            <div>
+                <div style="display: flex;">
+                    <div style="font-size: 16px; padding-top: 18px;">
+                        Tornike Todria
+                        <div style="font-size: 13px;">
+                            Founder
+                        </div>
+                    </div>
+                    <img style="width:160px; padding-left: 15px;" src="img/todria.png" alt="img">
+                </div>
+                <div style="display: flex;">
+                    <div style="font-size: 16px; padding-top: 18px;">
+                        David Tkhelidze
+                        <div style="font-size: 13px;">
+                            Founder
+                        </div>
+                    </div>
+                    <img style="width:160px; padding-left: 15px;" src="img/tkhelidze.png" alt="img">
+                </div>
+        
+            </div>
+            <div>
+                <img style="width: 215px; height: 6px;" src="img/logo-2.png" alt="logo-line">
+                <div style="font-size: 19px; font-weight: 400;">LTD SafCo Training Center</div>
+                <div>Registered in Tbilisi, Georgia</div>
+                <div>No.426112002</div>
+                <div>+995 032 283 02 21</div>
+                <div>info@safco.ge</div>
+                <div>www.safco.ge</div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 13px;">It is recommended to retake the course every year</div>
+            <div style="font-size: 13px;">რეკომენდირებულია კურსის წელიწადში ერთხელ გადაბარება</div>
+        </div>
+    </page>
+</body>
+
+</html>
